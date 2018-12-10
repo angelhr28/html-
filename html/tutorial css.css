@@ -1,0 +1,21 @@
+  /* REGLAS
+    -SELECTORES 
+    -DECLARACIONES   
+    -PROPIEDADES 
+    -VALORES
+
+
+    SELECTORES DE ETIQUETA HEADER - SECTION - BODY*/
+    body{
+      background: pink;
+      }
+    /* SELECTOR DEENDENTE= HIJOS NIETOS :V*/
+    body header div nav ol li a {
+      background: pink;
+    }
+    
+    selector de clase
+    .link
+    selector id 
+    #portafolio
+    

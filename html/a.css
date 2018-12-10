@@ -1,0 +1,241 @@
+
+/* body{
+background: pink;
+gris oscuro =#1d252c
+gris claro =#626262
+background gris = #1b2127
+celeste = #026fff
+} */
+
+.cabeza{
+  margin: 0 auto ;
+  /* border:solid rebeccapurple 1px; */
+  width: 1000px;
+  display: inherit;
+  height: inherit;
+  justify-content: inherit;
+  align-items: inherit; 
+  flex-wrap: inherit;
+}
+body{
+  font-family:'Source Sans Pro', sans-serif;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family: 'Fjalla One', sans-serif; /* fuente  */
+  font-weight: normal; /* separacion de letras */
+}
+h1{
+  line-height: 1.5; /* separacion */
+  font-size: 40px;  /* tamaño*/
+  /* font-style: italic; -->cursica negrita etc*/
+  letter-spacing: -0.3px; 
+  /* text-transform: uppercase;   ---> mayusculas
+  text-decoration: blueviolet; ---> tachados o subrayados */
+/* color: white;
+margin-left: 30px;
+margin-right: 400px; */
+margin: 0;
+}
+h1 strong{
+  color:  #026fff;
+}
+h2{
+  color: #ff0000;
+  font-family: 'Source Sans Pro';
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 28;
+  margin-bottom: 40px;
+}
+.hero{
+  height: 300px; /* alto */
+  /* background-image: url('../MAPA.png'); */
+  /* background-size: 400px 300px; */
+  background-color: #1d252c;
+  color: white;
+  /* background-repeat: no-repeat; */
+  /* background-position-x: right; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+} 
+.hero h1{
+  margin: 10px;
+  font-size: 30px;
+}
+.project{
+  /* border-top: 10px solid red;
+  border-left: 10px solid orange;
+  border-right: 10px solid blue;
+  border-bottom: 10px solid pink; */
+/* border-top-color: rebeccapurple;
+border-top-width: 15px;
+border-top-style: solid; */
+
+border: 1px solid black;
+border-radius: 10px;
+border-top-left-radius:50px; 
+/*padding-margin: top right bottom left   */
+margin-bottom: 15px;
+padding: 30px;    /*para rellenar un elemento*/
+background: white;
+/* 
+para poder dar unas especificaciones del tamaño del proyecto
+y el cual no pasa de ese tamaño.
+width: 500px;
+height: 500px;
+box-sizing: border-box; */
+display: flex;
+} 
+.portfolio{
+  background-color: #fafafa;
+  padding: 20px;
+}
+
+
+.project div{
+  width: 500px;/* ancho */
+}
+.project-imageContairne{    
+  width: 700px;
+  justify-content: center;
+}
+.hola2{
+  margin: 20px;
+}
+.header{
+color: white;
+background:#1d252c;
+display: flex;
+height: 100px;
+justify-content: space-between;
+align-items:center; 
+}
+.menu{
+  height: inherit;
+}
+.header ol{
+  display: flex;
+  height: inherit;
+}
+.header ol li{
+  height: inherit;
+}
+.header a{
+   color: aliceblue;
+   height: inherit;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0 10px; 
+}
+ol,
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+} 
+
+footer{
+  background: #1d252c;
+  display: flex;
+  justify-content: space-between;
+}
+footer div{
+  color: #fafafa;
+  display: flex;
+
+}
+.event figure{
+  margin: 0;
+}
+.event img{
+  width: 480px;
+  height: 200px;
+  object-fit: cover;
+  
+}
+
+.event{
+  margin: 50px 10px;
+  border: 1px solid black;
+  width: 450px;
+  border-radius: 20px;
+  overflow: hidden;     /*desaparecer los elementos fuera de la seccion delineada*/
+  flex-shrink: 0;
+  background: #f4fbff;
+  justify-content: space-between;
+}
+.event-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+.event-date{
+  margin: 20px 40px;
+  background: #fafafa;
+  margin-top: -40px;
+  position: relative;
+  padding: 20px;
+  text-align: center;
+}
+.event-description{
+  text-align: left;
+}
+.event-url{
+  text-align: center;
+  border: 1.5px solid #026fff;
+  text-decoration-color: none;
+  color: #026fff;
+  padding: 10px 60px;
+  border-radius: 5px;
+}
+.contacto{
+  padding: 20px 30px;
+  background: #1d252c;
+  color: white;
+  display: flex;
+  height: 150px;
+  align-items: center;
+  justify-content: space-between;
+}
+.social-link{
+  display: inline-block;
+  border: 2px solid white;
+  width: 50px;
+  height: 50px;
+  margin: 15px;
+  background-size: 50px 50px;
+} 
+.social-link.ig{
+  background-image: url(img/ig.jpg);
+  height: 50px;
+  width: 50px;
+}
+.social-link.fb{
+  background-image: url(img/fb.jpg);
+  height: 50px;
+  width: 50px;
+}
+.social-link.github{
+  background-image: url(img/git.png);
+  height: 50px;
+  width: 50px;
+  color: #0000ff
+}
+
+
+/* display: flex;
+  flex-wrap: nowrap ---> no salta o desplasa valor
+  flex-wrap: wrap ---> si salta o desplasa valor
+  justify-content: --------> separacion de elemntos horizonta
+  aling-items: -------------> aliniamiento vertical 
+  aling-self: -------------> aliniamiento personalizado 
+  */
